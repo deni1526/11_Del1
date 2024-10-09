@@ -1,7 +1,6 @@
 class Player {
     String name;
     int points;
-    int number;
 
 
     Player (String name, int points) {
