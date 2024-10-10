@@ -1,7 +1,21 @@
+ import java.util.Random;
 class Dice {
+    private int die;
 
-    int d1;
-    int d2;
+        Dice {
+           
+            Random rand = new Random();
+        int max=6,min=1; 
+        this.die = rand.nextInt(max - min + 1) + min;
 
-// test
+    }
+
+    void SetDie(int die) {
+        this.die = die;
+    }
+
+    int GetDie() {
+        return this.die;
+    }
 }
+
