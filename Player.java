@@ -1,6 +1,6 @@
 class Player {
-    String name;
-    int points;
+    private String name;
+    private int points;
 
 
     Player (String name, int points) {
@@ -27,8 +27,8 @@ class Player {
         this.points = points;
     }
 
-    void sumPoints(int point) {
-        this.points += point;
+    void addPoints(int sum) {
+        this.points += sum;
     }
 
 
