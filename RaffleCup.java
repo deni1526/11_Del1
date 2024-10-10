@@ -20,6 +20,20 @@ public class raffleCup  {
    
    }
 
+   void sum() {
+      this.sum = this.die1 + this.die2;
+   }
+   void getSum() {
+      return this.sum;
+   }
+   
+   boolean getEns() {
+      if (this.die1 == this.die2) {
+         return true;
+      } else {
+         return false;
+      }
+   }
    
    }
 
