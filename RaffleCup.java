@@ -1,8 +1,31 @@
 
-import java.util.Random;
 
 public class raffleCup  {   
-   public static void main(String[] args) {
+   
+   private int die1;
+   private int die2;
+   private int sum; 
+
+   int getDie1() {
+       return this.die1;
+   }
+   int getDie2() {
+      return this.die2;
+   }
+   void shakeRaffle() {
+      rollDice();
+      this.die1 = getDie();
+      rollDice();
+      this.die2 = getDie();
+   
+   }
+
+   
+   }
+
+
+/*
+      public static void main(String[] args) {
 Random rand = new Random();
 int max=6,min=1;
     
@@ -19,8 +42,6 @@ int max=6,min=1;
 
     }
     System.out.println(p);
-  
-   }
-}
- 
- 
+
+    */
+   

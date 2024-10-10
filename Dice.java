@@ -2,19 +2,18 @@
 class Dice {
     private int die;
 
-        Dice {
-           
-            Random rand = new Random();
+        static void rollDice() { 
+        Random rand = new Random();
         int max=6,min=1; 
         this.die = rand.nextInt(max - min + 1) + min;
 
     }
 
-    void SetDie(int die) {
+    void setDie(int die) {
         this.die = die;
     }
 
-    int GetDie() {
+    int getDie() {
         return this.die;
     }
 }
