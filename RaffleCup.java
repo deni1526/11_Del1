@@ -4,38 +4,23 @@ public class raffleCup  {
    
    private int die1;
    private int die2;
-   private int sum; 
+   
+   
+   void shakeRaffle(Dice die1, Dice die2) {
+      Random rand = new Random();
+        int max=6,min=1; 
+         this.die1 = rand.nextInt(max - min + 1) + min;
+         this.die2 = rand.nextInt(max - min + 1) + min;
 
-   int getDie1() {
-       return this.die1;
+         die1.setDie(this.die1);
+         die2.setDie(this.die2);
+        
    }
-   int getDie2() {
-      return this.die2;
-   }
-   void shakeRaffle() {
-      rollDice();
-      this.die1 = getDie();
-      rollDice();
-      this.die2 = getDie();
-   
-   }
+}
 
-   void sum() {
-      this.sum = this.die1 + this.die2;
-   }
-   int getSum() {
-      return this.sum;
-   }
+
    
-   boolean getEns() {
-      if (this.die1 == this.die2) {
-         return true;
-      } else {
-         return false;
-      }
-   }
-   
-   }
+
 
 
 /*
