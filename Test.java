@@ -15,7 +15,7 @@ class Test {
         int c11 = 0;
         int c12 = 0;
 
-        for (var i = 0; i < 100; i++) {
+        for (var i = 0; i < 1000; i++) {
             raffleCup.shakeRaffle(die1, die2);
             
             switch (Utils.getSumDice(die1, die2)) {
