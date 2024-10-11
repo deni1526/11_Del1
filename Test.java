@@ -17,7 +17,7 @@ class Test {
         int cD = 0;
 
         for (var i = 0; i < 1000; i++) {
-            raffleCup.shakeRaffle(die1, die2);
+            RaffleCup.shakeRaffle(die1, die2);
 
             if (Utils.getEns(die1, die2)) {
             cD++;
@@ -39,7 +39,7 @@ class Test {
         }
 
         long start = System.nanoTime();
-        raffleCup.shakeRaffle(die1, die2);
+        RaffleCup.shakeRaffle(die1, die2);
         long finish = System.nanoTime();
         long timeElapsed = finish - start;
         double milliSeconds = timeElapsed/1e+6;
