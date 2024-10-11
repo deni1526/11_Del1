@@ -23,7 +23,7 @@ public class raffleCup  {
    void sum() {
       this.sum = this.die1 + this.die2;
    }
-   void getSum() {
+   int getSum() {
       return this.sum;
    }
    
