@@ -14,12 +14,13 @@ class pointGame{
         int count = 0;
 
         var cup = new raffleCup();
+        var die1 = new Dice();
+        var die2 = new Dice();
 
         while(player[0].getPoints() < 40 || player[1].getPoints() < 40) {
             cup.shakeRaffle();
             //Printvalues method will be called here once the utils class has been made
-            cup.sum();
-            player[count].addPoints(cup.getSum()); //giver ikke mening at kalde summen før den bruges
+            player[count].addPoints(die1.getDie(), die2.getDie());
             //printPoints method will be called here once the utils class has been made
             
             if(cup.getEns() == false) {

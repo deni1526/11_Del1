@@ -27,8 +27,8 @@ class Player {
         this.points = points;
     }
 
-    void addPoints(int sum) {
-        this.points += sum;
+    void addPoints(int die1, int die2) {
+        this.points += die1 + die2;
     }
 
 
