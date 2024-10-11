@@ -1,21 +1,22 @@
 class Player {
+    //attributes
     private String name;
     private int points;
 
-
+    
     Player() {
         this.name = "player1";
         this.points = 0;
     }
 
-
+    //constructor
     Player (String name, int points) {
         this.name = name;
         this.points = points;
     }
 
 
-
+    //methods
     String getName() {
         return this.name;
     }

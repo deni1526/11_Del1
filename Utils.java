@@ -1,5 +1,6 @@
  class Utils{
 
+   //methods
    static boolean getEns(Dice die1, Dice die2) {
       if (die1.getDie() == die2.getDie()) {
          return true;
