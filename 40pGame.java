@@ -22,14 +22,11 @@ class pointGame{
             player[count].addPoints(cup.getSum()); //giver ikke mening at kalde summen før den bruges
             //printPoints method will be called here once the utils class has been made
             
-            if(cup.getEns() == false) { //count ændrer sig kun når facevalues ikke er ens men med count ved vi ikke om den er 0 eller 1
-                if(count == 0) {
-                    count = 1;
-                } else {
-                    count = 0;
-                }
+            if(cup.getEns() == false) {
+                count = count+1 % 2;
             }
         }
+        scanner.close();
 
 
     }
