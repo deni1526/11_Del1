@@ -1,19 +1,18 @@
+import java.util.Random;
 
-
-public class raffleCup  {   
-   
-   private int die1;
-   private int die2;
+class raffleCup  {   
    
    
-   void shakeRaffle(Dice die1, Dice die2) {
+   
+   
+   static void shakeRaffle(Dice die1, Dice die2) {
       Random rand = new Random();
         int max=6,min=1; 
-         this.die1 = rand.nextInt(max - min + 1) + min;
-         this.die2 = rand.nextInt(max - min + 1) + min;
+         int d1 = rand.nextInt(max - min + 1) + min;
+         int d2 = rand.nextInt(max - min + 1) + min;
 
-         die1.setDie(this.die1);
-         die2.setDie(this.die2);
+         die1.setDie(d1);
+         die2.setDie(d2);
         
    }
 }
