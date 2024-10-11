@@ -14,9 +14,14 @@ class Test {
         int c10 = 0;
         int c11 = 0;
         int c12 = 0;
+        int cD = 0;
 
         for (var i = 0; i < 1000; i++) {
             raffleCup.shakeRaffle(die1, die2);
+
+            if (Utils.getEns(die1, die2)) {
+            cD++;
+            }
             
             switch (Utils.getSumDice(die1, die2)) {
                 case 2 -> c2++;
@@ -31,9 +36,14 @@ class Test {
                 case 11 -> c11++;
                 case 12 -> c12++;
             }
-        
-        
         }
+
+        long start = System.nanoTime();
+        raffleCup.shakeRaffle(die1, die2);
+        long finish = System.nanoTime();
+        long timeElapsed = finish - start;
+        double milliSeconds = timeElapsed/1e+6;
+
         System.out.println("Number of 2's " + c2);
         System.out.println("Number of 3's " + c3);
         System.out.println("Number of 4's " + c4);
@@ -45,5 +55,7 @@ class Test {
         System.out.println("Number of 10's " + c10);
         System.out.println("Number of 11's " + c11);
         System.out.println("Number of 12's " + c12);
+        System.out.println("Number of Doubles " + cD);
+        System.out.println("Time to cast one roll " + timeElapsed + " nanoseconds or " + milliSeconds + " milliseconds");
     }
 }
