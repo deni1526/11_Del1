@@ -23,7 +23,7 @@ class pointGame{
             player[count].addPoints(die1.getDie(), die2.getDie());
             Utils.printPlayerPoints(player[count]);            
             if(Utils.getEns(die1, die2) == false) {
-                count = count+1 % 2;
+                count = (count+1) % 2;
             }
         }
         scanner.close();
