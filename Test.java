@@ -18,7 +18,7 @@ class Test {
         for (var i = 0; i < 100; i++) {
             raffleCup.shakeRaffle(die1, die2);
             
-            switch (Utils.GetSumDice()) {
+            switch (Utils.getSumDice(die1, die2)) {
                 case 2 -> c2++;
                 case 3 -> c3++;
                 case 4 -> c4++;
@@ -32,6 +32,8 @@ class Test {
                 case 12 -> c12++;
             }
         
+        
+        }
         System.out.println("Number of 2's " + c2);
         System.out.println("Number of 3's " + c3);
         System.out.println("Number of 4's " + c4);
@@ -43,6 +45,5 @@ class Test {
         System.out.println("Number of 10's " + c10);
         System.out.println("Number of 11's " + c11);
         System.out.println("Number of 12's " + c12);
-        }
     }
 }

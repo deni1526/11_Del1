@@ -3,6 +3,12 @@ class Player {
     private int points;
 
 
+    Player() {
+        this.name = "player1";
+        this.points = 0;
+    }
+
+
     Player (String name, int points) {
         this.name = name;
         this.points = points;
