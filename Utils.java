@@ -16,7 +16,7 @@
       System.out.println(player.getName() + " has " + player.getPoints() + " points");
    }
 
-   int getSumDice(Dice d1, Dice d2) {
+   static int getSumDice(Dice d1, Dice d2) {
       var sum = d1.getDie() + d2.getDie();
       return sum;
    }
