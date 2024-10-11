@@ -16,8 +16,11 @@ class pointGame{
         
         var die1 = new Dice();
         var die2 = new Dice();
+        String sInput = "";
 
         while(player[0].getPoints() < 40 || player[1].getPoints() < 40) {
+            sInput = scanner.nextLine();
+            System.out.println(player[count].getName() + "'s turn");
             raffleCup.shakeRaffle(die1, die2);
             Utils.printDiceValues(die2, die2);
             player[count].addPoints(die1.getDie(), die2.getDie());
