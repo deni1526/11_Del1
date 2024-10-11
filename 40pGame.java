@@ -11,6 +11,9 @@ class pointGame{
         int count = 0;
 
         while(player[0].points < 40 || player[1].points < 40) {}
+        while(player[0].points < 40 || player[1].points < 40) {
+            
+        }
 
 
     }
