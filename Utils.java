@@ -15,4 +15,9 @@
    static void printPlayerPoints(Player player) {
       System.out.println(player.getName() + " has " + player.getPoints() + " points");
    }
+
+   static int getSumDice(Dice d1, Dice d2) {
+      var sum = d1.getDie() + d2.getDie();
+      return sum;
+   }
  }
